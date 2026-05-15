@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a playback, UI, build, or release issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the stream type when relevant, but do not post private stream URLs.
+      placeholder: |
+        1. Open M3U8r
+        2. Paste or enter URL
+        3. Tap Play
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: "iPhone 17 Pro, iOS 26.5"
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
